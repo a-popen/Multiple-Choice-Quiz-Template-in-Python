@@ -1,0 +1,113 @@
+# Defining Score variables 
+from colorama import Back, Style, Fore
+x = 0
+score = x
+
+print( " Python Multiple Choice Quiz Template; the user is expected to input a letter associated with the answer that they want to give to a question. \n Press any key to begin.")
+input()
+
+# Question One
+
+print("\n1) Question 1")
+answer_1=input("      a) Answer A.\n      b) Answer B\n      c) Answer C \n")
+#  please put .lower on any input variable in the if statments otherwise it tells u it cant summon the strings
+if answer_1.lower()== "a" or answer_1.lower()=="A" :
+    print(Fore.GREEN + "Correct")
+    x=x+1
+else:
+    print(Fore.RED + "Incorrect.")
+
+
+# Question Two
+
+print(Style.RESET_ALL + "2) Question 2")
+answer_2 = input(Style.RESET_ALL + "      a) Answer A \n      b) Answer B \n      c) Answer C\n")
+if answer_2.lower()== "c" or answer_2.lower()== "C":
+    print(Fore.GREEN + "Correct")
+    x = x + 1
+else:
+    print(Fore.RED + "Incorrect")
+
+# Question Three
+
+print(Style.RESET_ALL + "3) Your Third Question.")
+answer_3 = input(Style.RESET_ALL + "      a) Answer A\n      b) Answer B\n      c)Answer C\n")
+if answer_3.lower()== "b" or answer_3.lower()== "B":
+    print(Fore.GREEN + "Correct")
+    x = x + 1
+else:
+    print(Fore.RED + "Incorrect.")
+
+#Question Four
+
+print(Style.RESET_ALL + "4) Question 4")
+answer_4=input(Style.RESET_ALL + "      a) Answer A \n      b) Answer B \n      c) Answer C\n")
+if answer_4.lower()== "b" or answer_4.lower()=="B":
+    print(Fore.GREEN + "Correct")
+    x=x+1
+else:
+    print(Fore.RED + "Incorrect.")
+
+#Question Five
+
+print(Style.RESET_ALL + "5) Question 5")
+answer_5=input(Style.RESET_ALL + "      a) Answer A \n      b) Answer B \n      c) Answer C\n")
+if answer_5.lower()=="c" or answer_5.lower()=="C":
+    print(Fore.GREEN + "Correct")
+    x=x+1
+else:
+    print(Fore.RED + "Incorrect")
+
+#Question Six
+
+print(Style.RESET_ALL + "6) Question 6")
+answer_6=input(Style.RESET_ALL + "      a) Answer A \n      b) Answer B \n      c) Answer C\n")
+if answer_6.lower()=="c" or answer_6.lower()=="C":
+    print(Fore.GREEN + "Correct.")
+    x=x+1
+else:
+    print(Fore.RED + "Incorrect.")
+
+
+#Question Seven
+print(Style.RESET_ALL + "7) Question 7")
+answer_7=input(Style.RESET_ALL + "      a) Answer A\n      b) Answer B\n      c) Answer C\n")
+if answer_7.lower()=="b" or answer_7.lower()=="B":
+    print(Fore.GREEN + "Correct.")
+    x=x+1
+else:
+    print(Fore.RED + "Incorrect.")
+
+#Question Eight
+
+print(Style.RESET_ALL + "8) Question 8")
+answer_8=input(Style.RESET_ALL + "      a) Answer A\n      b) Answer B\n      c) Answer C\n")
+if answer_8.lower()=="a" or answer_8.lower()=="A":
+    print(Fore.GREEN + "Correct.")
+    x=x+1
+else:
+    print(Fore.RED + "Incorrect.")
+
+#Question Nine
+
+print(Style.RESET_ALL + "9) Question 9")
+answer_9=input(Style.RESET_ALL + "      a)Answer A\n      b) Answer B\n      c) Answer C\n")
+if answer_9.lower()=="c" or answer_9.lower()=="C":
+    print(Fore.GREEN + "Correct.")
+    x=x+1
+else:
+    print(Fore.RED + "Incorrect.")
+
+#finally
+
+print(Style.RESET_ALL + "10) Question 10")
+answer_10=input(Style.RESET_ALL +"      a) Answer A\n      b) Answer B\n      c) Question C\n")
+if answer_10.lower()== "a" or answer_10.lower()=="A":
+    print(Fore.GREEN +"Correct.")
+    x=x+1
+else:
+    print(Fore.RED + "Incorrect.")
+
+#Total Score
+score = float(x / 10) * 100
+print(Style.RESET_ALL + "\n ",x," out of 10.",score,"%")
