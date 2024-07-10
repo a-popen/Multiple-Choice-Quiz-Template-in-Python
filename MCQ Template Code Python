@@ -1,3 +1,4 @@
+#MCQ Template by A. Popendikis; a-popen on Github
 # Defining Score variables 
 from colorama import Back, Style, Fore
 x = 0
